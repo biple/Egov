@@ -1,0 +1,206 @@
+/* styles.css */
+
+/* Header */
+header {
+    position: relative;
+    text-align: center; /* Center-align the content */
+}
+
+.logo img {
+    display: block;
+    width: 1200px; /* Set the image width */
+    max-width: 100%; /* Ensure responsiveness */
+    height: auto;
+    margin: 0 auto; /* Center-align the image */
+}
+
+/* Voter ID Registration text */
+h1 {
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add border below the container */
+
+/* Main content */
+main {
+    padding: 20px;
+}
+
+.registration-form {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add border below the container */
+.registration-form:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 20px; /* Adjust height as needed */
+    background-color: #f0f0f0; /* Gray-yellowish */
+    border-bottom: 2px solid #ccc; /* Border */
+    border-radius: 0 0 8px 8px;
+    margin-top: 20px; /* Spacing */
+}
+
+/* Name section */
+.name-section {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.name-section .form-group {
+    width: calc(33.33% - 20px); /* Adjusted width */
+}
+
+/* Add some space between name sections */
+.name-section .form-group:not(:last-child) {
+    margin-right: 20px;
+}
+
+/* Add some separation between text boxes in name sections */
+.name-section input:not(:last-child) {
+    margin-right: 10px;
+}
+
+/* DOB section */
+.dob-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dob-section .dob-selectors {
+    width: 30%;
+}
+
+/* Gender label */
+.gender-label {
+    font-weight: bold;
+}
+
+.dob-section .gender-select {
+    width: 150px;
+    display: inline-block;
+    justify-content: left;
+}
+
+/* ID number section */
+.id-number-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* Permanent and temporary address sections */
+.address-sections {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.permanent-address,
+.temporary-address {
+    width: calc(50% - 10px); /* Adjusted width */
+}
+
+/* Add some space between address sections */
+.permanent-address {
+    margin-right: 20px;
+}
+
+/* Form fields */
+.form-group {
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* CSS for spouse's name text fields */
+.spouse-name {
+    margin-top: 20px;
+}
+
+.spouse-name h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.spouse-name .name-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.spouse-name .name-section .form-group {
+    width: calc(33.33% - 20px); /* Adjusted width */
+}
+
+/* Add some separation between text boxes in spouse's name section */
+.spouse-name .name-section input:not(:last-child) {
+    margin-right: 20px;
+}
+
+/* CSS for the checkbox */
+.spouse-checkbox {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.spouse-checkbox input[type="checkbox"] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.spouse-checkbox label {
+    vertical-align: middle;
+}
+
+/* CSS for the submit button */
+.submit-button {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.submit-button button {
+    background-color: crimson;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button button:hover {
+    background-color: blue;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}

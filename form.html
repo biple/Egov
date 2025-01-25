@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter ID Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <!-- Governmental agency logo here -->
+            <img src="government_logo.png" alt="Government Logo">
+        </div>
+        <h1>Voter ID Registration</h1>
+    </header>
+    <main>
+        <div class="registration-form">
+            <h1>Personal Information</h1>
+            <form action="process_form.php" method="post" enctype="multipart/form-data">
+                <div class="name-section">
+                    <div class="form-group">
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" name="first_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="middle_name">Middle Name</label>
+                        <input type="text" id="middle_name" name="middle_name">
+                    </div>
+                    <div class="form-group">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" name="last_name" required>
+                    </div>
+                </div>
+                <div class="dob-section">
+                    <div class="dob-selectors">
+                        <label for="dob_year">Date of Birth (A.D.)</label>
+                        <select id="dob_year" name="dob_year" required>
+                            <!-- Year options will be added dynamically by JavaScript -->
+                        </select>
+                        <select id="dob_month" name="dob_month" required>
+                            <!-- Month options will be added dynamically by JavaScript -->
+                        </select>
+                        <select id="dob_day" name="dob_day" required>
+                            <!-- Day options will be added dynamically by JavaScript -->
+                        </select>
+                    </div>
+                    <div class="nepali-dob-selectors">
+                        <label for="nepali_dob_year">Date of Birth (B.S.)</label>
+                        <select id="nepali_dob_year" name="nepali_dob_year" required>
+                            <!-- Year options will be added dynamically by JavaScript -->
+                        </select>
+                        <select id="nepali_dob_month" name="nepali_dob_month" required>
+                            <!-- Month options will be added dynamically by JavaScript -->
+                        </select>
+                        <select id="nepali_dob_day" name="nepali_dob_day" required>
+                            <!-- Day options will be added dynamically by JavaScript -->
+                        </select>
+                    </div>
+                    <div class="gender-selectors">
+                        <label for="Gender">Gender: &nbsp;</label>
+                        <select class="gender-select" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="id-number-section">
+                    <label for="id_number">ID Number</label>
+                    <input type="text" id="id_number" name="id_number" required>
+                </div>
+                <div class="name-section">
+                    <div class="form-group">
+                        <label for="first_name">Father/Mother's First Name</label>
+                        <input type="text" id="parent_first_name" name="parent_first_name" required>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="middle_name">Father/Mother's Middle Name</label>
+                        <input type="text" id="parent_middle_name" name="parent_middle_name">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="last_name">Father/Mother's Last Name</label>
+                        <input type="text" id="parent_last_name" name="parent_last_name" required>
+                    </div>
+                </div>
+                <!-- Checkbox for spouse -->
+                <div class="spouse-checkbox">
+                    <input type="checkbox" id="has_spouse" name="has_spouse" value="yes">
+                    <label for="has_spouse">Do you have a spouse?</label>
+                </div>
+
+                <!-- Text field for spouse's name -->
+                <div class="spouse-name">
+                    <div class="name-section">
+                        <div class="form-group">
+                            <label for="spouse_first_name">Spouse's First Name</label>
+                            <input type="text" id="spouse_first_name" name="spouse_first_name" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="spouse_middle_name">Spouse's Middle Name</label>
+                            <input type="text" id="spouse_middle_name" name="spouse_middle_name" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="spouse_last_name">Spouse's Last Name</label>
+                            <input type="text" id="spouse_last_name" name="spouse_last_name" disabled>
+                        </div>
+                    </div>
+                </div>
+                
+                    <h1>Address Information</h1>
+                    <div class="address-sections">
+                        <div class="permanent-address">
+                            <h2>Permanent Address</h2>
+                                <div class="form-group">
+                                    <label for="permanent_street">Ward No</label>
+                                    <input type="text" id="permanent_street" name="permanent_street" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="permanent_city">City</label>
+                                    <input type="text" id="permanent_city" name="permanent_city" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="permanent_state">State</label>
+                                    <input type="text" id="permanent_state" name="permanent_state" required>
+                                </div> 
+                        </div>
+                        <div class="temporary-address">
+                            <h2>Voting Address</h2>
+                            
+        
+                                <div class="form-group">
+                                    <label for="temporary_street">Ward No</label>
+                                    <input type="text" id="temporary_street" name="temporary_street" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="temporary_city">City</label>
+                                    <input type="text" id="temporary_city" name="temporary_city" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="temporary_state">State</label>
+                                    <input type="text" id="temporary_state" name="temporary_state" required>
+                                </div>
+        
+                            
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="photo">Upload Photo:</label>
+                        <input type="file" class="form-control" id="photo" name="photo">
+                    </div>
+
+                    
+                    <div class="submit-button">
+                        <button type="submit" id="submit_button">Submit</button>
+                    </div>
+            </form>
+        </div>
+              
+    </main>
+    <footer>
+        <p>&copy; <strong>2024 Election Committee. All rights reserved.</strong></p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
