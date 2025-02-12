@@ -23,6 +23,7 @@ $image_path = isset($_GET['photo_path']) ? $_GET['photo_path'] : ''; // New para
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voter Identity Card</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
         /* Styles for the card */
         .card {
